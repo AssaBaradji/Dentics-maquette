@@ -89,6 +89,9 @@ ul .menu{
     border-radius: 3px;  
     font-size: 18px;
 }
+.menu input {
+    cursor: pointer ;
+}
 #Home .left h2{
     font-size: 50px;
     font-weight: bold;
@@ -497,7 +500,7 @@ h6 .gras{
 }
 .formulaire {
     display: flex;
-    width: 100%;
+    /* width: 100%; */
     margin-left: 130px;
 
 }
