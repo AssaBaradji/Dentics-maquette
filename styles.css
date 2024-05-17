@@ -23,11 +23,12 @@ header {
     left: 0;
     right: 0;
     background-color: rgba(255 255 255 /0.9);
-    box-shadow: 0 0 10px var(--defaultLinkColor);
-    z-index: 10;
+    border-bottom: 1px solid var(--defaultLinkColor);
+
 }
 .menu {
     display: flex;
+    margin-left: 500px
 }
 .logo {
     color: var(--lightprimary);
@@ -102,29 +103,41 @@ ul .menu{
     color: #FFD700;
     
 }
+#Home{
+    justify-content: center;
+}
 #Home .left p{
     margin-top: -30px;
+    font-size: 30px;
+    color: #777777;
 }
-.Home-button{
-    margin-top: 30px;
+#Home .left .Home-button{
+    display: flex;
+    width: 100%;
+    margin-top: 50px;
+    
+    
 }
 .button-bleu{
-    margin: 0 15px;
+    width: 30%;
     color: var(--white);
     background-color: var(--lightprimary);
     border: 1px solid var(--lightprimary); 
-    border-radius: 3px;  
+    border-radius: 15px;  
     font-size: 15px; 
-    padding: 5px; 
+    padding: 13px; 
+    cursor: pointer;
 }
 .button-blanc{
-    margin: 0 15px;
+    width: 30%;
     color: var(--defaultLinkColor);
     background-color:var(--whiteBG) ;
     border: 1px solid var(--muted); 
-    border-radius: 3px;  
+    border-radius: 15px;  
     font-size: 15px;  
-    padding: 5px;
+    padding: 13px; 
+    margin-left: 90px;
+    cursor: pointer;
 }
 #Home {
     display: flex;
@@ -154,8 +167,9 @@ ul .menu{
 } 
 .blue {
     display: flex;
-    background-color: var(--lightprimary);
-    padding-top:60px;
+    background-color:var(--lightprimary);
+    padding-top:30px;
+    justify-content: center;
 }
 .blue .left-blue {
     width: 50%;
@@ -181,12 +195,20 @@ ul .menu{
     color: var(--muted);
     background-color: var(--white);
     margin: 0 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
     border-radius: 15px;
     padding: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 .blue .right-blue .icon img {
-    transform: translate(50px, 10px);
+    width: 40px;
+    margin-bottom: 0;
 }
 #services .first-section {
     display: flex;  
@@ -201,15 +223,17 @@ ul .menu{
     border-radius: 0 0 50px;
     justify-content: left;  
     background-color: var(--whiteBG);
-    padding: 30px;
+    padding-bottom: 90px;
     height: 50%;
+    width: 35%;
    
 }
 #services .first-section .first-right{
     margin-top: 100px;
-    margin-left: 90px;
+    margin-left: -90px;
     display: flex;
     padding: 50px;
+    
 }
 #services .first-section .first-right .block1{
     margin-top: 50px;      
@@ -222,29 +246,12 @@ ul .menu{
     margin-top: 50px;
     margin-left: 50px;
     
+    
 }
 #services .first-section .first-right .block2 p{
     margin-top: -24px;
     margin-left: 30px;
-}
-#services .separation hr {
-    margin-left: 100px;
-    margin-top: -30px;
-}
-#services .separation h5{
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: -30px;
-       
-}
-#services .separation h1{
-    text-align: right;
-    font-weight: bold;
-    font-size: 30px;
-    margin-bottom: 50px; 
-}
-#services .separation h1 .text-jaune{
-    color: #FFD700;
+    
 }
 .second-section {
     display: flex;
@@ -253,6 +260,7 @@ ul .menu{
     justify-content: space-around;
     margin-top: 100px;
     margin: 100px;
+    margin-left: 200px;
 }
 .second-section .sous-section {
     height: 260px;
@@ -277,6 +285,7 @@ ul .menu{
 }
 .second-section .sous-section p{
     text-align: center;
+    
 }
 .first-blue{
     text-align: center;
@@ -297,6 +306,7 @@ h6 .gras{
 .first-blue .blue-p {
     width: 75%;
     margin-left: 170px;
+
 }
 .first-blue .button{
     background-color: var(--lightprimary);
@@ -307,51 +317,82 @@ h6 .gras{
     width: 15%;
     font-size: 15px;
 }
-.separation {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.separation h5 {
-    margin-bottom: -30px;
-    font-size: 32px;
-    
-}
-.separation h1 {
-    margin-top: 90px;
-    font-size: 30px;
-    color: #333;
-}
-.gras {
-    color: #000;
-    font-weight: bold;
-    font-size: 50px;
-}
-.text-jaune {
-    color: yellow;
-}
-.separation hr {
-    border: none;
-    border-top: 2px solid black;
+.separation{
     width: 100%;
-    margin-top: 10px;
-    margin-bottom: -100px;
-}
-.line {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
-.line h5, .line h1 {
-    flex: 1;
+.separation .separe {
+    width: 80%;
 }
-.line hr {
-    flex: 5;
+#services.separation .separe #pseparation{
+    margin-top: 100px;
+   
 }
+#pseparation{
+    margin-top: 100px;
+    font-size: 25px;
+}
+.separation .separe .separ1{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid var(--defaultLinkColor);
+}
+
+.separation .separe .separ1 span{
+    color: var(--yellow);
+}
+
+.separation .separe .separ{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    font-size: 30px;
+}
+
+.separation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.separation .separe {
+    width: 80%;
+}
+#services.separation .separe #pseparation{
+    margin-top: 100px;
+   
+}
+#pseparation{
+    margin-top: 100px;
+    font-size: 25px;
+}
+.separation .separe .separ1{
+    width: 90%;
+    display: flex;
+    justify-content: end;
+    border-bottom: 1px solid var(--defaultLinkColor);
+}
+
+.separation .separe .separ1 span{
+    color: var(--yellow);
+}
+
+.separation .separe .separ{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -40px;
+    font-size: 30px;
+}
+
 #historic .contenair{
     display: flex;
     margin-top: 80px;
     align-content: space-evenly;
     justify-content: space-around;
+    justify-content: center;
 }
 #historic .contenair .third-right{
     height: 260px;
@@ -378,41 +419,38 @@ h6 .gras{
     padding: 30px;
 
 }
-.registre h5 {
-    margin-bottom: -30px;
-    font-size: 32px;
-    
-}
-.registre h1 {
-    margin-top: 90px;
-    font-size: 30px;
-    color: #333;
-}
+
 .gras {
     color: #000;
     font-weight: bold;
     font-size: 50px;
 }
-.text-jaune {
-    color: yellow;
+
+#registre .registre .separation .line #pline{
+    margin-top: 100px;
+    margin-right: 1160px;
+    font-size: 30px;
+    margin-bottom: -50px;
 }
-.registre hr {
-    border: none;
-    border-top: 2px solid black;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: -100px;
-}
-.line {
+#registre .registre .separation .line .separator1{
+    width: 90%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: end;
+    border-bottom: 1px solid var(--defaultLinkColor);
 }
-.line h5, .line h1 {
-    flex: 1;
+
+#registre .registre .separation .line .separator1 span{
+    color: var(--yellow);
 }
-.line hr {
-    flex: 5;
+
+#registre .registre .separation .line .separator{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -25px;
+    font-size: 40px;
+}
+.separation .line{
+    width: 90%;
 }
 .registre .doctor{
     display: flex;
@@ -481,41 +519,48 @@ h6 .gras{
     display: flex;
     margin-left: 30%; 
     font-size: 20px;
+    
 }
 .registre .second-blue .customer-profil img{
     display: flex;
     padding: 40px;
     height: 80%;
     background-color: #ffffff;
-    width: 100% ;
+    width: 90%;
     margin-top: -20px;
     margin-left: 100px;
+    padding-bottom: 70px;
+    border-radius: 10px;
 }
 .registre .second-blue .customer-profil p{
-    margin-top: -25px;
-    font-size: 14px;
+    margin-top: -40px;
+    font-size: 20px;
     width: 100%;
     font-weight: bold;
-    margin-left: 200px;
+    margin-left: 180px;
 }
 .formulaire {
     display: flex;
-    /* width: 100%; */
-    margin-left: 130px;
+    margin-left: -90px;
+    margin-bottom: -180px;
+    margin-top: 100px;
+    justify-content: center;
+
 
 }
 .formulaire .fourth-left img{
-    width: 100%;
+    width: 90%;
 }
 .formulaire .fourth-right .corps-formulaire{
     display: flex;
     width: 110%;
-    margin-left: 130px;
+    margin-left: 170px;
 }
 .formulaire .fourth-right {
     display: flex;
     flex-direction: column;
     width: 30%;
+    margin-top: 40px;
 }
 .corps-formulaire .gauche .groupe input{
     margin: 20px;
@@ -523,7 +568,8 @@ h6 .gras{
     padding: 5px ;
     border-radius: 10px;
     width: 92%;
-    margin-left: -10px;
+    margin-left: -50px;
+    padding-left: 20px;
     
 }
 .corps-formulaire .droite .groupe input{
@@ -532,26 +578,27 @@ h6 .gras{
     padding: 5px ;
     border-radius: 10px;
     width: 92%;
-    margin-left: -10px;
+    margin-left: -50px;
+    padding-left: 20px;
 }
 .corps-formulaire{
-    width: 90%;
+    width: 80%;
 }
 .corps-formulaire .droite{
     margin-left: 30px;
 }
 .formulaire form .pied-formulaire{
     margin-bottom: 100px;
-    margin-left: 30%;
+    margin-left: 23%;
     
 }
 form .checkbox{
     margin-top: -70px;
-    margin-left: 140px;
+    margin-left: 115px;
     font-size: 15px;
 }
 .formulaire .fourth-right input[type=submit]{
-    margin-left: 140px;
+    margin-left: 120px;
     width: 100%;
     padding: 15px;
     margin-top: 35px;
@@ -610,8 +657,7 @@ form .checkbox{
     margin: 30px;
     font-size: 30px;
 }
-#blue-end{
-    background-color: #F8FAFC;
+#blue-end{ 
     padding: 50px;
     width: 95% ;
     margin-left: -20px;
