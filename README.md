@@ -9,8 +9,8 @@ Ce projet est un site web conçu pour les services d'un cabinet Dentaires. je l'
 - Présente une page d'accueil avec une présentation du site.
 - Intègre une galerie de photos pour nos meilleurs services.
 - Intégre une registre des differents medecins exerçant dans le cabinet.
-- Integre un formulaire client pour prise de rendez vous .
-- Integre les differents réseau internet utilisé par le cabinet dentaire.
+- Intégre un formulaire client pour une prise de rendez vous .
+- Intégre les differents réseau internet utilisés par le cabinet dentaire.
 
 
 ## Technologies Utilisées
