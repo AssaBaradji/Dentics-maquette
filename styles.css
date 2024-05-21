@@ -1,16 +1,18 @@
-:root {
-    --primary: #007b00;
-    --lightprimary: #0056b3;
+:root{
+    
+    --primary: #516eff;
+    --lightprimary:#0056b3;
     --white:#ffffff;
     --silver:#bcbcbc9e;
     --defaultLinkColor:#333;
-    --yellow:#FFD700;
+    --yellow:#fddf3b;
     --muted:#777777;
-    --whiteBG:#F8FAFC;
-    --footerBG:#216583;
-} 
+    --whiteBG:#f8fafc;
+}
 body{
 background-color: var(--white);
+padding: 0;
+margin: 0;
 }
 header {
     display: flex;
@@ -37,7 +39,7 @@ nav {
     margin-left: 500px
 }
 .logo {
-    color: var(--lightprimary);
+    color: var(--primary);
     font-weight: 700;
     font-size: 25px;
 }
@@ -57,6 +59,10 @@ ul .menu{
      text-decoration: 0;
      color: var(--muted);
      position: relative;
+     transition: 0.5s ease-in;
+}
+.menu li a:hover{
+    color: var(--primary);
 }
 .menu li a::before {
     position: absolute;
@@ -67,6 +73,7 @@ ul .menu{
     height: 2px;
     border-radius: 6px;
     background-color: var(--lightprimary);
+    color: var(--primary);
     transition: 0.5s;
 }
 .menu li a:hover::before {
@@ -91,8 +98,8 @@ ul .menu{
 }
 .menu input[type="submit"]{
     color: var(--white);
-    background-color: var(--lightprimary);
-    border: 5px solid var(--lightprimary); 
+    background-color: var(--primary);
+    border: 5px solid var(--primary); 
     border-radius: 3px;  
     font-size: 18px;
 }
@@ -127,8 +134,8 @@ ul .menu{
 .button-bleu{
     width: 30%;
     color: var(--white);
-    background-color: var(--lightprimary);
-    border: 1px solid var(--lightprimary); 
+    background-color: var(--primary);
+    border: 1px solid var(--primary); 
     border-radius: 15px;  
     font-size: 15px; 
     padding: 13px; 
@@ -173,7 +180,7 @@ ul .menu{
 } 
 .blue {
     display: flex;
-    background-color:var(--lightprimary);
+    background-color:var(--primary);
     padding-top:30px;
     justify-content: center;
 }
@@ -225,7 +232,7 @@ ul .menu{
     font-size: 25px;  
 }
 #services .first-section .first-left {
-    border-radius: 0 0 50px;
+    border-radius: 0 0 110px;
     justify-content: left;  
     background-color: var(--whiteBG);
     padding-bottom: 90px;
@@ -294,7 +301,7 @@ ul .menu{
 }
 .first-blue{
     text-align: center;
-    background-color: var(--lightprimary);
+    background-color: var(--primary);
     padding: 30px;
     color: var(--whiteBG);
     justify-content: center;
@@ -324,6 +331,7 @@ h6 .gras{
     border-radius: 10px;
     width: max-content;
     font-size: 15px;
+    cursor: pointer;
 }
 .separation{
     width: 100%;
@@ -340,13 +348,19 @@ h6 .gras{
 }
 #pseparation{
     margin-top: 100px;
-    font-size: 25px;
+    font-size: 30px;
+    font-weight: bold;
 }
 .separation .separe .separ1{
-    width: 90%;
+    width: 85%;
+    height: 80px;
     display: flex;
     justify-content: end;
-    border-bottom: 1px solid var(--defaultLinkColor);
+    flex-direction: column;
+}
+.separation .separe .separ1 hr{
+    width: 100%;
+    height: 1;
 }
 
 .separation .separe .separ1 span{
@@ -359,6 +373,13 @@ h6 .gras{
     margin-top: -40px;
     font-size: 30px;
 }
+.separation .separe .separ h5{
+    font-size: 1.6em;
+    display: flex;
+    justify-content: end;
+    margin-top:20px ;
+    margin-bottom: 0;
+}
 
 #historic .contenair{
     display: flex;
@@ -367,46 +388,39 @@ h6 .gras{
     justify-content: space-around;
     justify-content: center;
 }
-#historic .separation {
-    text-align: center;
-    margin-bottom: 20px;
-}
-#historic .separation h5 {
-    margin-bottom: -30px;
-    font-size: 32px;
 
-}
-#historic .separation h1 {
-    margin-top: 90px;
-    font-size: 25px;
-    color: #333;
-}
-.gras {
-    color: #000;
-    font-weight: bold;
-    font-size: 50px;
-}
-.text-jaune {
-    color: yellow;
-}
-#historic .separation hr {
-    border: none;
-    border-top: 2px solid black;
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: -100px;
-}
-#historic .separation .line {
+.historys{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    width: 100%;
 }
-#historic .separation .line h5, .line h1 {
-    flex: 1;
+.historys .line{
+    width: 75%;
+    margin-top: 30px;
 }
-#historic .separation .line hr {
-    flex: 5;
+.historys .line p{
+    display: flex;
+    justify-content: end;
+    font-size: 30px;
+    margin-bottom: 0;
 }
+.historys .line h5{
+    font-size: 1.9em;
+    margin: 0;
+}
+.historys .line .line1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.historys .line .line1 .line2{
+    width: 88%;
+}
+.historys .line .line1 .line2 span{
+    color: var(--yellow);
+}
+
 #historic .contenair .third-right{
     height: 260px;
     width: 34%;
@@ -421,16 +435,16 @@ h6 .gras{
     margin-left: 50px;
     margin-top: 13px;  
 }
+#historic .contenair .third-right p{
+    line-height: 1.6;
+}
 #historic .contenair .third-left img{
     box-shadow: 15px solid #777777;
 }
 .registre {
-    text-align: center;
     margin-bottom: 20px;
     background-color: #F8FAFC;
     margin-top: 150px;
-    padding: 30px;
-
 }
 
 .gras {
@@ -470,6 +484,7 @@ h6 .gras{
     flex-direction: row;
     margin-left: 11%;
     margin-top: 50px;
+    text-align: center;
 }
 .registre .doctor img{
     width: 100%;
@@ -493,23 +508,22 @@ h6 .gras{
     margin-left: 35px;
 }
 .registre .doctor .button{
-    border: 1px solid var(--lightprimary);
+    border: 1px solid var(--primary);
     width: 55%;
     border-radius: 5px;
     color: var(--lightprimary);
     padding: 10px;
-
+    cursor: pointer;
 }
 .second-blue{
     margin-top: 50px;
-    background-color: var(--lightprimary);
+    background-color: var(--primary);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     width: 100%;
-    height: 50vh;
-    
+    height: 50vh;  
 }
 .customer-point {
     width: 50%;
@@ -518,6 +532,11 @@ h6 .gras{
     text-align: left;
     line-height: 1.5;
     color: var(--silver);
+}
+.second-blue .customer-point .p{
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
 }
 .second-blue .customer-point h3{
     font-size: 25px;
@@ -551,7 +570,6 @@ h6 .gras{
 .Appointment .separation h5 {
     margin-bottom: -30px;
     font-size: 32px;
-
 }
 .Appointment .separation h1 {
     margin-top: 90px;
@@ -586,73 +604,79 @@ h6 .gras{
 }
 .formulaire {
     display: flex;
-    margin-left: -90px;
-    margin-bottom: -180px;
-    margin-top: 100px;
+    width: 100%;
     justify-content: center;
+    margin-top: 60px;
 
 
+}
+.formulaire .fourth-left{
+    width: 40%;
 }
 .formulaire .fourth-left img{
-    width: 90%;
-}
-.formulaire .fourth-right .corps-formulaire{
-    display: flex;
-    width: 110%;
-    margin-left: 170px;
+    margin-left: 50px;
 }
 .formulaire .fourth-right {
     display: flex;
-    flex-direction: column;
-    width: 30%;
-    margin-top: 40px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
 }
-.corps-formulaire .gauche .groupe input{
-    margin: 20px;
-    font-size: 15px;
-    padding: 5px ;
-    border-radius: 10px;
-    width: 92%;
-    margin-left: -50px;
-    padding-left: 20px;
-    
-}
-.corps-formulaire .droite .groupe input{
-    margin: 20px;
-    font-size: 15px;
-    padding: 5px ;
-    border-radius: 10px;
-    width: 92%;
-    margin-left: -50px;
-    padding-left: 20px;
-}
-.corps-formulaire{
+.formulaire .fourth-right form{
     width: 80%;
 }
+.formulaire .fourth-right form .groupe{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    width: 50%;
+}
 .corps-formulaire .droite{
-    margin-left: 30px;
+    display: flex;
+}
+.corps-formulaire .gauche{
+    display: flex;
 }
 .formulaire form .pied-formulaire{
-    margin-bottom: 100px;
-    margin-left: 23%;
-    
+    display: flex;
+    flex-direction: column;
+    width: 91%;
+    margin: 15px;  
 }
 form .checkbox{
-    margin-top: -70px;
-    margin-left: 115px;
-    font-size: 15px;
+    margin: 15px;   
+}
+.formulaire .fourth-right input[type="text"],
+.formulaire .fourth-right input[type="number"],
+.formulaire .fourth-right input[type="date"]{
+    padding: 15px;
+    width: 90%;
+    border-radius: 10px;
+}
+.formulaire .fourth-right textarea{
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
 }
 .formulaire .fourth-right input[type=submit]{
-    margin-left: 120px;
     width: 100%;
     padding: 15px;
-    margin-top: 35px;
+    margin: 15px;
     border-radius: 10px;
-    background-color: var(--footerBG);
+    background-color: var(--primary);
     color: #ffffff;
+    cursor: pointer;
+}
+.formulaire .fourth-right label{
+    margin-bottom: 8px;
 }
 #subcribe{
     background-color: #F8FAFC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
 }
 #subcribe form .third-blue{
     background-color:#213a54; 
@@ -660,13 +684,9 @@ form .checkbox{
     padding: 60px;
     border-radius: 15px;
     height: 15%;
-    width: 70%;
-    font-size: 30px;
-    margin-top: 400px;
-    margin-left: 200px;
-    
+    width: 100%;
+    font-size: 30px;   
 } 
-
 #subcribe form .third-blue .all-button {
     display: flex;
     flex-direction: row;
@@ -675,6 +695,7 @@ form .checkbox{
     border-radius: 10px;
     color: #ffffff;
     justify-content: center;
+    cursor: pointer;
    
 }
 #subcribe form .third-blue .all-button input[type="text"]{
@@ -703,20 +724,19 @@ form .checkbox{
     font-size: 30px;
 }
 #blue-end{ 
-    padding: 50px;
-    width: 95% ;
+    padding: 0 50px;
+    width: 94.5% ;
     margin-left: -20px;
 }
 #blue-end .pied-page{
     display: flex;
     justify-content: center;
     color: #ffffff;
-    background: #0056b3;
+    background: var(--primary);
     padding: 50px;
-    margin-top: 150px;
     margin-left: -30px;
     margin-bottom: -50px;
-    width: 97.2%;
+    width: 98.8%;
 
 }
 #blue-end .pied-page .first-level{
@@ -775,8 +795,7 @@ footer{
     margin-bottom: -90px;
     padding: 8px;
     margin-left: O;
-    width: 97.5%;
+    width: 98.5%;
 }
-
 
 
