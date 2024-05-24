@@ -61,6 +61,9 @@ ul .menu{
      position: relative;
      transition: 0.5s ease-in;
 }
+.menu li .active{
+    color: var(--primary);
+}
 .menu li a:hover{
     color: var(--primary);
 }
@@ -96,35 +99,35 @@ ul .menu{
 .menu li a:hover{
     color: #000;
 }
-.menu input[type="submit"]{
+.menu [type="submit"] {
     color: var(--white);
     background-color: var(--primary);
     border: 5px solid var(--primary); 
     border-radius: 3px;  
     font-size: 18px;
 }
-.menu input {
+.menu [type="submit"] {
     cursor: pointer ;
 }
-#Home .left h2{
+#home .left h2{
     font-size: 50px;
     font-weight: bold;
     width: 68%;
     
 }
-#Home .left h2 .text-jaune{
+#home .left h2 .text-jaune{
     color: #FFD700;
     
 }
-#Home{
+#home{
     justify-content: center;
 }
-#Home .left p{
+#home .left p{
     margin-top: -30px;
     font-size: 30px;
     color: #777777;
 }
-#Home .left .Home-button{
+#home .left .Home-button{
     display: flex;
     width: 100%;
     margin-top: 50px;
@@ -152,7 +155,7 @@ ul .menu{
     margin-left: 90px;
     cursor: pointer;
 }
-#Home {
+#home {
     display: flex;
     width: 100%;
     height: 100vh;
@@ -174,7 +177,7 @@ ul .menu{
 .right img {
     flex-direction:column ;
 }
-#Home .services{
+#home .services{
     display: flex;
     
 } 
@@ -225,9 +228,12 @@ ul .menu{
 #services .first-section {
     display: flex;  
 }
-#services .first-section .first-right  h4 {
-    margin: 0px;
-    transform: translate(250px);
+#services .first-section .first-right h2 {
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+    margin: -50px;
+    transform: translate(230px);
     font-weight: bold; 
     font-size: 25px;  
 }
@@ -236,34 +242,51 @@ ul .menu{
     justify-content: left;  
     background-color: var(--whiteBG);
     padding-bottom: 90px;
-    height: 50%;
+    height: 60%;
     width: 35%;
    
 }
-#services .first-section .first-right{
-    margin-top: 100px;
-    margin-left: -90px;
-    display: flex;
-    padding: 50px;
-    
-}
-#services .first-section .first-right .block1{
-    margin-top: 50px;      
-}
-#services .first-section .first-right .block1 p {
-    margin-top: -24px;
-    margin-left: 30px;
-}
-#services .first-section .first-right .block2{
-    margin-top: 50px;
+#services .first-section .first-left img{
+    margin-top: 70px;
     margin-left: 50px;
-    
+}
+#services .first-section .first-right{
+    display: flex;
+    /* margin-bottom: -100px; */
+    justify-content: center;
+    /* margin-right: -60px; */
     
 }
-#services .first-section .first-right .block2 p{
-    margin-top: -24px;
-    margin-left: 30px;
+#services .first-section .first-right{
+    margin: 200px 50px;
+}
+#services .first-section .first-right .block1 .icon{
+    display: flex;
+    flex-direction: row;
+}
+#services .first-section .first-right .block1 .icon img {
+    width: 30px;
+    height: 30px;
+}
+#services .first-section .first-right .block2 .icon img{
+    width: 30px;
+    height: 30px;
+}
+#services .first-section .first-right .block2 .icon{
+    display: flex;
+    flex-direction: row; 
+    margin-left: 100px; 
+}
+#services .first-section .first-right .block2 .icon .para{
+    font-size: 18px;
+    margin-top:0;
+    margin-left: 20px;
     
+}
+#services .first-section .first-right .block1 .icon .para{
+    font-size: 18px;
+    margin-top:0;
+    margin-left: 20px;
 }
 .second-section {
     display: flex;
@@ -487,7 +510,7 @@ h6 .gras{
     text-align: center;
 }
 .registre .doctor img{
-    width: 100%;
+    width: 80%;
 }
 .registre .doctor .doctor-profil{
     margin: 0 30px;
@@ -527,12 +550,15 @@ h6 .gras{
 }
 .customer-point {
     width: 50%;
-    padding: 30px;
     font-size: 16px;
     text-align: left;
     line-height: 1.5;
     color: var(--silver);
+    display: flex;
+    flex-direction:column;
+    margin-top: 60px;
 }
+
 .second-blue .customer-point .p{
     width: 100%;
     text-align: center;
@@ -563,15 +589,15 @@ h6 .gras{
     text-align: center;
     margin: 0;
 }
-.Appointment .separation {
+.appointment .separation {
     text-align: center;
     margin-bottom: 20px;
 }
-.Appointment .separation h5 {
+.appointment .separation h5 {
     margin-bottom: -30px;
     font-size: 32px;
 }
-.Appointment .separation h1 {
+.appointment .separation h1 {
     margin-top: 90px;
     font-size: 25px;
     color: #333;
@@ -584,22 +610,22 @@ h6 .gras{
 .text-jaune {
     color: yellow;
 }
-.Appointment .separation hr {
+.appointment .separation hr {
     border: none;
     border-top: 2px solid black;
     width: 100%;
     margin-top: 10px;
     margin-bottom: -100px;
 }
-.Appointment .separation .line {
+.appointment .separation .line {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.Appointment .separation .line h5, .line h1 {
+.appointment .separation .line h5, .line h1 {
     flex: 1;
 }
-.Appointment .separation .line hr {
+.appointment .separation .line hr {
     flex: 5;
 }
 .formulaire {
@@ -611,7 +637,7 @@ h6 .gras{
 
 }
 .formulaire .fourth-left{
-    width: 40%;
+    width: 30%;
 }
 .formulaire .fourth-left img{
     margin-left: 50px;
@@ -677,6 +703,10 @@ form .checkbox{
     justify-content: center;
     align-items: center;
     padding: 70px;
+    /* margin-top: 80px; */
+}
+#subcribe form{
+    width: 80%;
 }
 #subcribe form .third-blue{
     background-color:#213a54; 
@@ -684,7 +714,7 @@ form .checkbox{
     padding: 60px;
     border-radius: 15px;
     height: 15%;
-    width: 100%;
+    /* width: 100%; */
     font-size: 30px;   
 } 
 #subcribe form .third-blue .all-button {
@@ -699,7 +729,7 @@ form .checkbox{
    
 }
 #subcribe form .third-blue .all-button input[type="text"]{
-    background-color: var(--footerBG);
+    background-color: #ffffffaa;
     font-size: 18px;
     width: 31%;
     margin: 15px;
@@ -724,9 +754,14 @@ form .checkbox{
     font-size: 30px;
 }
 #blue-end{ 
-    padding: 0 50px;
-    width: 94.5% ;
-    margin-left: -20px;
+    /* margin-top: 50px; */
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh; 
 }
 #blue-end .pied-page{
     display: flex;
@@ -793,9 +828,7 @@ footer{
     justify-content: center;
     color: #ffffff;
     margin-bottom: -90px;
-    padding: 8px;
-    margin-left: O;
-    width: 98.5%;
+    width:100%;
 }
 
 
